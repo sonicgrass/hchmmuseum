@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halls Crossroads Historical Museum</title>
+    <!-- This single line links your separate CSS style guide file -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-wrap">
+        <div class="logo-block" onclick="switchView('home-view')">
+            <div class="logo-emblem">HC</div>
+            <div class="logo-text">
+                <h1>Halls Crossroads</h1>
+                <p>Historical Museum &nbsp;·&nbsp; Knoxville, TN</p>
+            </div>
+        </div>
+        <button class="menu-toggle" id="menu-btn" onclick="toggleMobileMenu()">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#" id="link-home" class="nav-link active" onclick="switchView('home-view')">Home</a></li>
+                <li><a href="#" id="link-about" class="nav-link" onclick="switchView('about-view')">About & Founder</a></li>
+                <li><a href="#" id="link-history" class="nav-link" onclick="switchView('history-view')">Our History</a></li>
+                <li><a href="#" id="link-board" class="nav-link" onclick="switchView('board-view')">Board & Officers</a></li>
+                <li><a href="#" id="link-donations" class="nav-link" onclick="switchView('donations-view')">Donations</a></li>
+                <li><a href="#" id="link-gallery" class="nav-link" onclick="switchView('gallery-view')">Gallery</a></li>
+                <li><a href="#" id="link-contact" class="nav-link" onclick="switchView('contact-view')">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- VIEW: HOME PAGE -->
+ <div id="home-view" class="page-view active-view">
+        <section class="hero">
+            <h2 class="hero-subcap">Halls Crossroads</h2>
+            <h2>HISTORICAL MUSEUM</h2>
+            <h2>Preserving the Legacy of Our Community</h2>
+            <p>Welcome to the Halls Crossroads Historical Museum portal. Explore our rich digital assets, view collection records, and experience our local history.</p>
+        </section>
+
+        <section class="alert-banner">
+            <span class="alert-badge">Museum Hours</span>
+            <div>
+                <strong>We are Open to the Public!</strong> Our regular operating hours are every Wednesday from 10:00 AM to 4:00 PM, and every Sunday from 2:00 PM to 5:00 PM. We invite all neighbors, schools, and families to come view the collections.
+     
+                <p class="hero-address"><strong>LOCATED AT</strong> 7119 Afton Dr., Knoxville, TN 37918</p>
+            </div>
+        </section>
+
+        <div class="section-grid">
+            <div class="feature-card">
+                <div>
+                    <h3>Our Origin Story</h3>
+                    <p>Discover who the very first Hall settler was, when they arrived at the crossroads, and how this community evolved into a focal point of East Tennessee culture.</p>
+                </div>
+                <span class="card-btn" onclick="switchView('history-view')">Read History</span>
+            </div>
+            <div class="feature-card">
+                <div>
+                    <h3>The LaRue Collection</h3>
+                    <p>Learn more about our late founder, Hubert LaRue, whose lifelong devotion to collecting everyday historical items laid the foundations of our preservation archives.</p>
+                </div>
+                <span class="card-btn" onclick="switchView('about-view')">Meet the Founder</span>
+            </div>
+            <div class="feature-card">
+                <div>
+                    <h3>Support the Museum</h3>
+                    <p>As a community asset run entirely by volunteers, we count on private funding, brick sponsorships, and documentation drop-offs to keep the legacy thriving.</p>
+                </div>
+                <span class="card-btn" onclick="switchView('donations-view')">View Forms</span>
+            </div>
+        </div>
+
+        <div class="mission-box">
+            <h3>Our Core Mission</h3>
+            <ul class="mission-list">
+                <li>To build physical and digital safe spaces to protect the extensive Hubert LaRue historical collection for public use.</li>
+                <li>To acquire historical records, vintage photographs, family bibles, and domestic artifacts detailing life in early Halls Crossroads.</li>
+                <li>To keep admission open to historical investigators, local genealogists, and educational field trips.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- VIEW: ABOUT & FOUNDER -->
+    <div id="about-view" class="page-view">
+        <div class="page-title-area">
+            <h2>About Us & Our Founder</h2>
+        </div>
+        <div class="prose-content">
+            <p>The Halls Crossroads Historical Museum was established to celebrate the spirit, culture, and deep heritage of our region. Operable entirely through public goodwill and volunteer directors, the museum is dedicated to keeping past narratives visible for future generations.</p>
+            <p>The crown jewel of our institution is the lifelong collection built by our community's foremost preservationist, Hubert LaRue. His collection maps the practical, social, and commercial milestones that shaped our lives.</p>
+            
+            <div class="founder-profile">
+                <div style="background:#e2e8f0; border-radius:50%; width:110px; height:110px; display:flex; align-items:center; justify-content:center; font-weight:700; color:#4a5568; flex-shrink: 0;">H. L.</div>
+                <div>
+                    <h3 style="color:var(--primary); margin-bottom:4px;">Hubert LaRue</h3>
+                    <p style="font-weight:600; font-size:0.9rem; color:var(--accent); margin-bottom:8px;">FOUNDER & CHIEF CHRONICLER</p>
+                    <p style="font-size:0.95rem; margin:0;">Hubert spent decades gathering authentic local artifacts, tools, agricultural items, and ancestral photo streams, working diligently to guarantee that the early stories of Halls would never be forgotten.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW: HISTORY TIMELINE -->
+    <div id="history-view" class="page-view">
+        <div class="page-title-area">
+            <h2>How We Came to be Halls</h2>
+        </div>
+        <div class="prose-content">
+            <p>The community footprint of Halls Crossroads forms a historical doorway into East Tennessee. Here is an introductory overview of the landmark eras that transformed our settlement:</p>
+            
+            <div class="timeline-container">
+                <div class="timeline-node">
+                    <div class="timeline-year">Late 1700s</div>
+                    <div class="timeline-content">
+                        <h4>The Initial Settlement</h4>
+                        <p>Early pioneer families trek across the Appalachian ridges, putting down roots in the fertile basin spaces of East Tennessee near Knox County boundaries.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-year">Early 1800s</div>
+                    <div class="timeline-content">
+                        <h4>The Arrival of Thomas Hall</h4>
+                        <p>Thomas Hall arrives in the area and establishes a homestead. His family line forms the backbone of commercial trade and infrastructure at the early intersection.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-year">1900s</div>
+                    <div class="timeline-content">
+                        <h4>The Crossroads Flourishes</h4>
+                        <p>As transportation networks map across Tennessee, the area grows into a central commercial hub known widely as "Halls Crossroads," linking outlying farm systems with urban Knoxville markets.</p>
+                    </div>
+                </div>
+                <div class="timeline-node">
+                    <div class="timeline-year">Recent Decades</div>
+                    <div class="timeline-content">
+                        <h4>The Grand Opening</h4>
+                        <p>Following decades of archival tracking by regional historians, the community holds its official Grand Opening museum ceremony on Sunday, October 27, drawing over 100 residents to celebrate local history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW: BOARD AND OFFICERS -->
+    <div id="board-view" class="page-view">
+        <div class="page-title-area">
+            <h2>Officers & Board of Directors</h2>
+        </div>
+        <p class="prose-content">Our administrative board is comprised of local volunteers who donate their time, professional resources, and care to ensure the continuous operation of the museum grounds.</p>
+        
+        <div class="board-grid">
+            <div class="board-member-card"><div class="board-initials">CT</div><div><h4>Carl Tindell</h4><p>President</p></div></div>
+            <div class="board-member-card"><div class="board-initials">DC</div><div><h4>Derryl Corum</h4><p>Vice President</p></div></div>
+            <div class="board-member-card"><div class="board-initials">SB</div><div><h4>Sandi Brewer</h4><p>Secretary</p></div></div>
+            <div class="board-member-card"><div class="board-initials">GM</div><div><h4>Gail Moore</h4><p>Treasurer</p></div></div>
+            <div class="board-member-card"><div class="board-initials">BS</div><div><h4>Bobbie Smith</h4><p>Board Member</p></div></div>
+            <div class="board-member-card"><div class="board-initials">DE</div><div><h4>Danny Edsell</h4><p>Board Member</p></div></div>
+            <div class="board-member-card"><div class="board-initials">JC</div><div><h4>Jean Clift</h4><p>Board Member</p></div></div>
+            <div class="board-member-card"><div class="board-initials">LB</div><div><h4>Larry Brewer</h4><p>Board Member</p></div></div>
+        </div>
+    </div>
+
+    <!-- VIEW: DONATIONS AND FORMS -->
+    <div id="donations-view" class="page-view">
+        <div class="page-title-area">
+            <h2>Donations & Commemorative Forms</h2>
+        </div>
+        <div class="prose-content">
+            <p>The operational expenses of the Halls Crossroads Historical Museum are managed completely via private tax-deductible gifts. You can permanently link your family name to our building via our memorial pathway projects.</p>
+            
+            <div class="form-panel">
+                <h3 style="color:var(--primary); margin-bottom:12px;">Support via Brick Sponsorship</h3>
+                <p>Our ongoing fundraiser offers custom engraved brick pavers placed along the museum's entrance walkway. This serves as a wonderful tribute to honor pioneer lineages, corporate supporters, or memorialize loved ones.</p>
+                
+                <div class="download-btn-row">
+                    <a href="#" class="btn-main" onclick="alert('Form download feature placeholder.')">📄 Download Brick Order Form</a>
+                    <a href="#" class="btn-main" style="background:#4a5568;" onclick="alert('Artifact form placeholder.')">📦 Artifact Gift Release Form</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIEW: GALLERY -->
+    <div id="gallery-view" class="page-view">
+        <div class="page-title-area">
+            <h2>Museum Gallery</h2>
+        </div>
+        <p class="prose-content">Take a look through snapshots from our formal Grand Opening and historical archival logs from around the Halls Crossroads community space.</p>
+        
+        <div class="media-gallery">
+            <div class="gallery-item"><div class="gallery-placeholder">Grand Opening Day Celebration</div><div class="gallery-caption">Over 100 community visitors joined us.</div></div>
+            <div class="gallery-item"><div class="gallery-placeholder">The Hubert LaRue Archive Room</div><div class="gallery-caption">Shelving units displaying historical items.</div></div>
+            <div class="gallery-item"><div class="gallery-placeholder">Vintage Smoky Mountain Survey</div><div class="gallery-caption">Historical regional mapping document.</div></div>
+            <div class="gallery-item"><div class="gallery-placeholder">Pioneer Family Artifact Displays</div><div class="gallery-caption">Everyday household goods from early residents.</div></div>
+        </div>
+    </div>
+
+    <!-- VIEW: CONTACT -->
+    <div id="contact-view" class="page-view">
+        <div class="page-title-area">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-layout">
+            <div>
+                <div class="info-strip"><div class="info-strip-icon">📍</div><div><h4>Location</h4><p>7119 Afton Dr.<br>Knoxville, Tennessee 37918</p></div></div>
+                <div class="info-strip"><div class="info-strip-icon">🕒</div><div><h4>Visiting Hours</h4><p>Wednesdays: 10:00 AM – 4:00 PM<br>Sundays: 2:00 PM – 5:00 PM</p></div></div>
+                <div class="info-strip"><div class="info-strip-icon">📩</div><div><h4>Digital Enquiries</h4><p>For tours, school schedules, or genealogical lookups, use the contact form.</p></div></div>
+            </div>
+            <div>
+                <form id="museum-contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="ui-form-group"><label class="ui-label">Your Full Name</label><input type="text" class="ui-input" required placeholder="John Doe"></div>
+                    <div class="ui-form-group"><label class="ui-label">Email Address</label><input type="email" class="ui-input" required placeholder="john@example.com"></div>
+                    <div class="ui-form-group"><label class="ui-label">Message Details</label><textarea class="ui-textarea" rows="5" required placeholder="How can our volunteer docents assist you?"></textarea></div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-logo-line">
+                <div class="footer-emblem">HC</div>
+                <h4 style="margin-bottom:0;">Halls Crossroads<br>Historical Museum</h4>
+            </div>
+            <p style="max-width: 360px;">Preserving local traditions, pioneer genealogy, and community history records across East Tennessee.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#" onclick="switchView('home-view')">Home Base</a></li>
+                <li><a href="#" onclick="switchView('history-view')">Historical Timeline</a></li>
+                <li><a href="#" onclick="switchView('donations-view')">Support Forms</a></li>
+                <li><a href="#" onclick="switchView('gallery-view')">Media Vault</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Location Access</h4>
+            <p>Knox County Region</p>
+            <p>Tennessee, USA</p>
+        </div>
+    </div>
+    <div class="footer-base">
+        <p>&copy; 2026 Halls Crossroads Historical Museum. All rights preserved by community volunteers.</p>
+    </div>
+</footer>
+
+<script>
+    function switchView(viewId) {
+        const views = document.querySelectorAll('.page-view');
+        views.forEach(view => view.classList.remove('active-view'));
+        const targetView = document.getElementById(viewId);
+        if(targetView) targetView.classList.add('active-view');
+        
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        if(viewId === 'home-view') document.getElementById('link-home').classList.add('active');
+        if(viewId === 'about-view') document.getElementById('link-about').classList.add('active');
+        if(viewId === 'history-view') document.getElementById('link-history').classList.add('active');
+        if(viewId === 'board-view') document.getElementById('link-board').classList.add('active');
+        if(viewId === 'donations-view') document.getElementById('link-donations').classList.add('active');
+        if(viewId === 'gallery-view') document.getElementById('link-gallery').classList.add('active');
+        if(viewId === 'contact-view') document.getElementById('link-contact').classList.add('active');
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.getElementById('nav-menu').classList.remove('mobile-open');
+    }
+
+    function toggleMobileMenu() {
+        document.getElementById('nav-menu').classList.toggle('mobile-open');
+    }
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        alert('Thank you for reaching out! A volunteer board member will review your message shortly.');
+        document.getElementById('museum-contact-form').reset();
+    }
+</script>
+
+</body>
+</html>
